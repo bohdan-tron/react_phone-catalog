@@ -1,1 +1,20 @@
-// not empty
+@import './utils/utils';
+@import './Carousel/Carousel.scss';
+@import './Ellipse/Ellipse.scss';
+@import './Navigation/Navigation.scss';
+@import './Header/Header.scss';
+@import './Footer/Footer.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.logo {
+  width: 40px;
+  height: 24px;
+  margin: 20px 0 20px 24px;
+}

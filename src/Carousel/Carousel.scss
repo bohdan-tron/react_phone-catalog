@@ -1,0 +1,72 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 1136px;
+  height: 400px;
+
+
+  &__wrapper {
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    width: inherit;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    height: max-content;
+    width: inherit;
+  }
+
+  &__button {
+    display: flex;
+    height: 400px;
+    width: 32px;
+    border: 1px solid #000;
+
+  }
+
+  &--backward {
+    display: flex;
+    margin-left: 10px;
+  }
+
+  &--forward {
+    display: flex;
+    margin-right: 10px;
+  }
+
+  &__container {
+    width: 1040px;
+    height: 400px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    position: relative;
+    height: inherit;
+    flex-direction: row;
+    list-style-type: none;
+    overflow: hidden;
+  }
+
+  &__item {
+    display: flex;
+    width: 1040px;
+    transition: 500ms;
+  }
+
+  &__picture {
+    height: inherit;
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+  }
+}

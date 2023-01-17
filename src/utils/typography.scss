@@ -1,0 +1,51 @@
+@import './variables.scss';
+
+%h1-bold {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: -0.01em;
+  color: $color-primary;
+}
+
+%h2-bold {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 31px;
+  color: $color-primary;
+}
+
+%h3-semibold {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 31px;
+  color: $color-primary;
+}
+
+%uppercase {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-secondary;
+}
+
+%buttons {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+%body-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-primary;
+}
+
+%small-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}

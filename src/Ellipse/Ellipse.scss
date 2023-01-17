@@ -1,0 +1,22 @@
+.ellipse {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  height: 14px;
+  width: 14px;
+  background-color: $color-red;
+  border-radius: 50%;
+  border: 1px solid $color-white;
+
+  &__counter {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    line-height: 11px;
+    font-size: 8px;
+    color: $color-white;
+  }
+}

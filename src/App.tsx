@@ -1,9 +1,19 @@
 import './App.scss';
+import { Carousel } from './Carousel/Carousel';
+import { Footer } from './Footer/Footer';
+import { Header } from './Header/Header';
 
-const App = () => (
-  <div className="App">
-    <h1>React Phone Catalog</h1>
-  </div>
-);
+const App = () => {
+  return (
+    <div className="App">
+
+      <Header />
+
+      <Carousel />
+
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
