@@ -36,11 +36,11 @@
 
     .chevron {
       filter: brightness(0)
-      saturate(100%)
-      invert(16%)
-      sepia(7%)
-      hue-rotate(193deg)
-      contrast(89%);
+        saturate(100%)
+        invert(16%)
+        sepia(7%)
+        hue-rotate(193deg)
+        contrast(89%);
     }
 
     &:hover {

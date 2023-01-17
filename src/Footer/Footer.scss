@@ -64,13 +64,4 @@
       border-color: $color-primary;
     }
   }
-
-  &__chevron {
-    filter: brightness(0)
-      saturate(100%)
-      invert(16%)
-      sepia(7%)
-      hue-rotate(193deg)
-      contrast(89%);
-  }
 }

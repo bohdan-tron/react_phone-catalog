@@ -41,7 +41,7 @@ export const Footer: React.FC = () => (
           href="#header"
           className="footer__back-button"
         >
-          <SvgChevronUp className="footer__chevron" />
+          <SvgChevronUp className="chevron" />
         </a>
       </div>
     </div>
