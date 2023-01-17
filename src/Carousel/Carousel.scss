@@ -1,3 +1,5 @@
+@import "../utils/utils";
+
 .carousel {
   display: flex;
   justify-content: center;
@@ -5,14 +7,13 @@
   margin: 0 auto;
   margin-top: 40px;
   width: 1136px;
-  height: 400px;
-
 
   &__wrapper {
     display: flex;
     position: relative;
-    background-color: #fff;
+    background-color: $color-white;
     width: inherit;
+    height: 432px;
   }
 
   &__buttons {
@@ -25,10 +26,26 @@
 
   &__button {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 400px;
     width: 32px;
-    border: 1px solid #000;
+    cursor: pointer;
+    border: 1px solid $color-icons;
+    background-color: $color-white;
 
+    .chevron {
+      filter: brightness(0)
+      saturate(100%)
+      invert(16%)
+      sepia(7%)
+      hue-rotate(193deg)
+      contrast(89%);
+    }
+
+    &:hover {
+      border-color: $color-primary;
+    }
   }
 
   &--backward {
@@ -64,9 +81,46 @@
   }
 
   &__picture {
-    height: inherit;
     object-fit: cover;
     width: inherit;
     height: inherit;
+  }
+
+  &__pagination {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-100%);
+    // margin-top: 18px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__indicators {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  &__indicator {
+    margin-left: 14px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__rectangle {
+    height: 4px;
+    width: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: $color-elems;
+
+    &.active {
+      background-color: $color-primary;
+    }
   }
 }
