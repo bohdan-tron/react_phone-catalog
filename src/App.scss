@@ -19,6 +19,10 @@
   margin: 20px 0 20px 24px;
 }
 
+ul {
+  list-style: none;
+}
+
 .chevron {
   filter: brightness(0)
     saturate(100%)
@@ -26,4 +30,13 @@
     sepia(7%)
     hue-rotate(193deg)
     contrast(89%);
+}
+
+.hot {
+  display: inline;
+  width: 1132px;
+}
+
+.prodslider {
+
 }
