@@ -29,69 +29,75 @@ const App = () => {
 
       <section className="hot">
         <div className="hot__hat">
-          <h1 className="hot__title">Hot prices</h1>
-          <div className="hot__buttons">
-            <button
-              type="button"
-              className="hot__backward"
-              aria-label="hot button backward"
-            >
-              <SvgChevronLeft className="chevron" />
-            </button>
-            <button
-              type="button"
-              className="hot__forward"
-              aria-label="hot button forward"
-            >
-              <SvgChevronRight className="chevron" />
-            </button>
-
-            <div className="prodslider">
-              <ul className="prodslider__list">
-                <li className="prodslider__item">
-                  <div className="card">
-                    <img
-                      src="img/phones/motorola-atrix-4g.0.jpg"
-                      alt="product"
-                      className="card__image"
-                    />
-                    <p className="card__name">
-                      Apple iPhone Xs 64GB Silver (iMT9G2FS/A)
-                    </p>
-                    <h2 className="card__discount-price">$799</h2>
-                    <p className="card__price">$899</p>
-                    <hr />
-                    <p className="card__screen">
-                      Screen
-                      <span className="card__screen-spec">5.8” OLED</span>
-                    </p>
-                    <p className="card__capacity">
-                      Capacity
-                      <span className="card__capacity-spec">64 GB</span>
-                    </p>
-                    <p className="card__ram">
-                      RAM
-                      <span className="card__ram-spec">4 GB</span>
-                    </p>
-
-                    <div className="card__buttons">
-                      <button
-                        type="button"
-                        className="card__add"
-                      >
-                        Add to cart
-                      </button>
-                      <button
-                        type="button"
-                        className="card__fav"
-                      >
-                        <SvgFavsUnfilled />
-                      </button>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+          <div className="hot__hat-content">
+            <h1 className="hot__title">Hot prices</h1>
+            <div className="hot__buttons">
+              <button
+                type="button"
+                className="hot__backward"
+                aria-label="hot button backward"
+              >
+                <SvgChevronLeft className="chevron" />
+              </button>
+              <button
+                type="button"
+                className="hot__forward"
+                aria-label="hot button forward"
+              >
+                <SvgChevronRight className="chevron" />
+              </button>
             </div>
+          </div>
+
+          <div className="prodslider">
+            <ul className="prodslider__list">
+              <li className="prodslider__item">
+                <div className="card">
+                  <img
+                    src="./img/motorola-atrix-4g.0.jpg"
+                    alt="mobile-img"
+                    className="card__image"
+                  />
+                  <p className="card__name">
+                    Apple iPhone Xs 64GB Silver (iMT9G2FS/A)
+                  </p>
+                  <div className="card__price-content">
+                    <h2 className="card__discount-price">
+                      $799
+                      <span className="card__price">$899</span>
+                    </h2>
+                  </div>
+                  {/* <hr /> */}
+                  <p className="card__spec-left">
+                    Screen
+                    <span className="card__spec-right">5.8” OLED</span>
+                  </p>
+                  <p className="card__spec-left">
+                    Capacity
+                    <span className="card__spec-right">64 GB</span>
+                  </p>
+                  <p className="card__spec-left">
+                    RAM
+                    <span className="card__spec-right">4 GB</span>
+                  </p>
+
+                  <div className="card__buttons">
+                    <button
+                      type="button"
+                      className="card__add"
+                    >
+                      Add to cart
+                    </button>
+                    <button
+                      type="button"
+                      className="card__fav"
+                    >
+                      <SvgFavsUnfilled />
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

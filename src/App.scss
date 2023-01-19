@@ -33,10 +33,74 @@ ul {
 }
 
 .hot {
-  display: inline;
-  width: 1132px;
+  &__hat {
+    width: 1132px;
+  }
+
+  &__hat-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    @extend %h1-bold;
+  }
 }
 
 .prodslider {
+  width: 1132px;
+  margin-top: 24px;
+}
 
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 32px;
+  padding-bottom: 24px;
+  width: 272px;
+  height: 507px;
+  border: 1px solid $color-elems;
+
+  &__image {
+    width: 208px;
+    height: 208px;
+  }
+
+  &__name {
+    margin-top: 24px;
+  }
+
+  &__price-content {
+    height: 44px;
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid $color-elems;
+  }
+
+  &__discount-price {
+    @extend %h2-bold;
+  }
+
+  &__price {
+    color: $color-secondary;
+    text-decoration: line-through;
+    margin-left: 8px;
+  }
+
+  &__spec-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @extend %small-text;
+    color: $color-secondary;
+  }
+
+  &__spec-right {
+    display: block;
+    font-weight: 600;
+    color: $color-primary;
+  }
 }
