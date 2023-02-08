@@ -54,7 +54,7 @@ const App = () => {
               <li className="prodslider__item">
                 <div className="card">
                   <img
-                    src="./img/motorola-atrix-4g.0.jpg"
+                    src="img/products/motorola-atrix-4g.0.jpg"
                     alt="mobile-img"
                     className="card__image"
                   />
@@ -67,30 +67,32 @@ const App = () => {
                       <span className="card__price">$899</span>
                     </h2>
                   </div>
-                  {/* <hr /> */}
-                  <p className="card__spec-left">
-                    Screen
-                    <span className="card__spec-right">5.8” OLED</span>
-                  </p>
-                  <p className="card__spec-left">
-                    Capacity
-                    <span className="card__spec-right">64 GB</span>
-                  </p>
-                  <p className="card__spec-left">
-                    RAM
-                    <span className="card__spec-right">4 GB</span>
-                  </p>
+
+                  <div className="card__specs">
+                    <p className="card__spec-left">
+                      Screen
+                      <span className="card__spec-right">5.8” OLED</span>
+                    </p>
+                    <p className="card__spec-left">
+                      Capacity
+                      <span className="card__spec-right">64 GB</span>
+                    </p>
+                    <p className="card__spec-left">
+                      RAM
+                      <span className="card__spec-right">4 GB</span>
+                    </p>
+                  </div>
 
                   <div className="card__buttons">
                     <button
                       type="button"
-                      className="card__add"
+                      className="card__button card__button--add"
                     >
                       Add to cart
                     </button>
                     <button
                       type="button"
-                      className="card__fav"
+                      className="card__button card__button--fav"
                     >
                       <SvgFavsUnfilled />
                     </button>

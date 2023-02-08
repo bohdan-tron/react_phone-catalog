@@ -33,6 +33,9 @@ ul {
 }
 
 .hot {
+  display: flex;
+  justify-content: center;
+
   &__hat {
     width: 1132px;
   }
@@ -58,25 +61,29 @@ ul {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 32px;
-  padding-bottom: 24px;
+  padding: 24px;
   width: 272px;
   height: 507px;
   border: 1px solid $color-elems;
 
   &__image {
+    margin: 8px;
+    margin-bottom: 0;
     width: 208px;
     height: 208px;
   }
 
   &__name {
+    @extend %body-text;
     margin-top: 24px;
   }
 
   &__price-content {
+    display: flex;
+    align-items: center;
+    float: left;
     height: 44px;
     width: 100%;
-    float: left;
     border-bottom: 1px solid $color-elems;
   }
 
@@ -90,9 +97,14 @@ ul {
     margin-left: 8px;
   }
 
+  &__specs {
+    margin-top: 8px;
+  }
+
   &__spec-left {
     display: flex;
     flex-direction: row;
+    margin-top: 8px;
     justify-content: space-between;
     @extend %small-text;
     color: $color-secondary;
@@ -102,5 +114,33 @@ ul {
     display: block;
     font-weight: 600;
     color: $color-primary;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+
+  &__button {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    height: 40px;
+
+    &--add {
+      width: 176px;
+      color: $color-white;
+      background-color: $color-primary;
+    }
+
+    &--fav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      border: 1px solid $color-icons;
+    }
   }
 }
