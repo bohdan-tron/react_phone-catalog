@@ -1,0 +1,126 @@
+@import "../utils/utils";
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    position: relative;
+    background-color: $color-white;
+    width: inherit;
+    height: 432px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    height: max-content;
+    width: inherit;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 32px;
+    cursor: pointer;
+    border: 1px solid $color-icons;
+    background-color: $color-white;
+
+    .chevron {
+      filter: brightness(0)
+        saturate(100%)
+        invert(16%)
+        sepia(7%)
+        hue-rotate(193deg)
+        contrast(89%);
+    }
+
+    &:hover {
+      border-color: $color-primary;
+    }
+  }
+
+  &--backward {
+    display: flex;
+    margin-left: 10px;
+  }
+
+  &--forward {
+    display: flex;
+    margin-right: 10px;
+  }
+
+  &__container {
+    width: 1040px;
+    height: 400px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    position: relative;
+    height: inherit;
+    flex-direction: row;
+    list-style-type: none;
+    overflow: hidden;
+  }
+
+  &__item {
+    display: flex;
+    width: 1040px;
+    transition: 500ms;
+  }
+
+  &__picture {
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+  }
+
+  &__pagination {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-100%);
+    // margin-top: 18px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__indicators {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  &__indicator {
+    margin-left: 14px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__rectangle {
+    height: 4px;
+    width: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: $color-elems;
+
+    &.active {
+      background-color: $color-primary;
+    }
+  }
+}
