@@ -32,12 +32,23 @@ ul {
     contrast(89%);
 }
 
+.app {
+  width: 100%;
+  margin: 0 auto;
+
+  &__wrapper {
+    max-width: 1136px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
 .hot {
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  max-width: 1136px;
 
   &__hat {
-    width: 1132px;
+    width: 1136px;
   }
 
   &__hat-content {
@@ -50,11 +61,29 @@ ul {
   &__title {
     @extend %h1-bold;
   }
+
+  &__buttons {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__button {
+    @include button-reset;
+    @include button-light-bg;
+    height: 32px;
+    width: 32px;
+  }
 }
 
 .prodslider {
-  width: 1132px;
+  max-width: 1136px;
   margin-top: 24px;
+  overflow: hidden;
+
+  &__list {
+    display: flex;
+    gap: 16px;
+  }
 }
 
 .card {
@@ -67,8 +96,7 @@ ul {
   border: 1px solid $color-elems;
 
   &__image {
-    margin: 8px;
-    margin-bottom: 0;
+    margin: 8px auto 0;
     width: 208px;
     height: 208px;
   }
@@ -79,33 +107,31 @@ ul {
   }
 
   &__price-content {
-    display: flex;
-    align-items: center;
-    float: left;
     height: 44px;
     width: 100%;
+    float: left;
+    margin-bottom: 8px;
     border-bottom: 1px solid $color-elems;
   }
 
   &__discount-price {
+    margin-top: 6px;
     @extend %h2-bold;
   }
 
   &__price {
+    @extend %body-text;
+    font-size: 17px;
     color: $color-secondary;
     text-decoration: line-through;
     margin-left: 8px;
   }
 
-  &__specs {
-    margin-top: 8px;
-  }
-
   &__spec-left {
     display: flex;
     flex-direction: row;
-    margin-top: 8px;
     justify-content: space-between;
+    margin-top: 8px;
     @extend %small-text;
     color: $color-secondary;
   }
@@ -118,29 +144,22 @@ ul {
 
   &__buttons {
     display: flex;
-    justify-content: space-between;
+    gap: 8px;
     margin-top: 16px;
   }
 
   &__button {
-    all: unset;
-    box-sizing: border-box;
-    cursor: pointer;
-    text-align: center;
+    @include button-reset;
     height: 40px;
 
     &--add {
-      width: 176px;
-      color: $color-white;
-      background-color: $color-primary;
+      @include button-dark-bg;
+      width: 100%;
     }
 
     &--fav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      border: 1px solid $color-icons;
+      @include button-light-bg;
+      min-width: 40px;
     }
   }
 }

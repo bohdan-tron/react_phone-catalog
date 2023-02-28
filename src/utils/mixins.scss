@@ -1,0 +1,28 @@
+@mixin button-reset {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+@mixin button-light-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color-icons;
+  transition: border-color 300ms;
+
+  &:hover {
+    border-color: $color-primary;
+  }
+}
+
+@mixin button-dark-bg {
+  background-color: $color-primary;
+  color: $color-white;
+  text-align: center;
+  transition: box-shadow 300ms;
+
+  &:hover {
+    box-shadow: 0 3px 13px $button-hover-shadow;
+  }
+}

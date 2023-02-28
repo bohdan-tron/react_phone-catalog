@@ -6,7 +6,7 @@
   align-items: center;
   margin: 0 auto;
   margin-top: 40px;
-  width: 1136px;
+  width: 100%;
 
   &__wrapper {
     display: flex;
@@ -20,19 +20,14 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    height: max-content;
     width: inherit;
   }
 
   &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include button-reset;
+    @include button-light-bg;
     height: 400px;
     width: 32px;
-    cursor: pointer;
-    border: 1px solid $color-icons;
-    background-color: $color-white;
 
     .chevron {
       filter: brightness(0)
@@ -42,20 +37,6 @@
         hue-rotate(193deg)
         contrast(89%);
     }
-
-    &:hover {
-      border-color: $color-primary;
-    }
-  }
-
-  &--backward {
-    display: flex;
-    margin-left: 10px;
-  }
-
-  &--forward {
-    display: flex;
-    margin-right: 10px;
   }
 
   &__container {
@@ -93,7 +74,6 @@
     bottom: 10px;
     left: 50%;
     transform: translateX(-100%);
-    // margin-top: 18px;
     justify-content: center;
     align-items: center;
   }

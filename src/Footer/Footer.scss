@@ -53,15 +53,8 @@
   }
 
   &__back-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include button-light-bg;
     height: 32px;
     width: 32px;
-    border: 1px solid $color-icons;
-
-    &:hover {
-      border-color: $color-primary;
-    }
   }
 }
